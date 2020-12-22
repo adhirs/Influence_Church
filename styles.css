@@ -1,0 +1,147 @@
+
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Montserrat-Black";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid{
+  padding: 7% 15%;
+
+
+}
+
+.boxing{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: rgb(117, 171, 189);
+  /* background-image: url("https://images.unsplash.com/photo-1517244649640-fcacab5ce213?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80");  */
+  color: #fff;
+}
+
+.white-section {
+  position: relative;
+/* background-image: url("https://images.unsplash.com/photo-1517244649640-fcacab5ce213?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80"); */
+background-image: url("http://www.baltana.com/files/cars-1/Ford-Endeavour-Wallpaper-1600x800-68831.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+width: auto;
+height: auto;
+overflow:visible;
+
+
+
+
+}
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+
+/* #title {
+  background-color: rgb(117, 171, 189);
+  color: #fff;
+  text-align: left;
+} */
+
+/* #title .container-fluid {
+  padding: 3% 15% 7%;
+} */
+
+/* Title Image */
+
+/* .title-image {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+} */
+
+/* Features Section */
+
+/* #features {
+  position: relative;
+} */
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+  padding-bottom: 100px;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}

@@ -1,7 +1,10 @@
 body {
   font-family: "Montserrat";
   text-align: center;
+
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat-Bold";
@@ -29,39 +32,44 @@ p {
 .container-fluid{
   padding: 7% 15%;
 
-
-}
-
-.boxing{
-  padding-top: 100px;
-  padding-bottom: 50px;
 }
 
 .church_img{
   opacity: 0.5;
 }
-/* .boxing-well{
-  padding-bottom: 400px;
-} */
 
 /* Sections */
 
 .white-section {
   background-color: white;
-  /* background-image: url("https://images.unsplash.com/photo-1517244649640-fcacab5ce213?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80");  */
   color: white ;
+  max-height: 350px;
+}
+
+.navbar-begin{
+  position: relative;
+  bottom:100px;
+}
+
+.big-card{
+  min-height: 300px;
+  text-align: center;
+}
+
+
+.img-bg{
+  background-color:rgb(117, 171, 180) ;
+  background-blend-mode: darken;
+  }
+
+.card{
+  margin-bottom: 10px;
 }
 
 .colored-section {
   position: relative;
-/* background-image: url("https://images.unsplash.com/photo-1517244649640-fcacab5ce213?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80"); */
-/* background-image: url("http://www.baltana.com/files/cars-1/Ford-Endeavour-Wallpaper-1600x800-68831.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-width: auto;
-height: auto;
-overflow:visible; */
-background-color: white;
+background-color:white;
+
 
 
 
@@ -93,6 +101,7 @@ background-color: white;
 .download-button {
   margin: 5% 3% 5% 0;
 }
+
 
 /* Title Section */
 
@@ -177,6 +186,13 @@ background-color: white;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.social-icon{
+  margin: 20px 20px;
+}
+
+
+
 @media (max-width: 1028px) {
 
   #title {

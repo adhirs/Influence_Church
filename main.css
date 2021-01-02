@@ -1,37 +1,72 @@
-body {
+body,html {
+  height: 100%;
   font-family: "Montserrat";
-  text-align: center;
-
+  padding: 0;
+  box-sizing: border-box;
+margin: 0;
 }
-
 
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat-Bold";
 }
 
-p {
-  color: #8f8f8f;
+
+
+
+.card-text{
+  position: absolute; /* Position the background text */
+  bottom: 800px; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(30, 0, 0, 1); /* Black background with 0.5 opacity */
+  color: white; /* Grey text */
+  font-size: 22px;
+  font-weight: bolder;
+text-align: center;
+align-items: center;
 }
 
-/* Headings */
 
-.big-heading {
-  font-family: "Montserrat-Black";
-  font-size: 3.5rem;
-  line-height: 1.5;
+.card-information{
+  color: white;
+  opacity: 0.8;
+  top:100px;
+
 }
 
-.section-heading {
-  font-size: 3rem;
-  line-height: 1.5;
+
+.just-text{
+  position: absolute;
+  top:1000px;
+
 }
+
+.pimg1{
+    background-image: url("images/hero.jpg");
+    min-height: 100%;
+    position: relative;
+    opacity: 0.6;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index:-1;
+}
+
+
 
 /* Containers */
 
 .container-fluid{
   padding: 7% 15%;
 
+}
+
+.logo{
+position: absolute;
+top: 0;
+width: 10%;
+background-blend-mode: lighten;
 }
 
 .church_img{
@@ -46,25 +81,21 @@ p {
   max-height: 350px;
 }
 
-.navbar-begin{
-  position: relative;
-  bottom:100px;
-}
 
-.big-card{
+/* .big-card{
   min-height: 300px;
   text-align: center;
-}
+} */
 
-
+/*
 .img-bg{
   background-color:rgb(117, 171, 180) ;
   background-blend-mode: darken;
-  }
-
+  } */
+/*
 .card{
   margin-bottom: 10px;
-}
+} */
 
 .colored-section {
   position: relative;
@@ -94,62 +125,13 @@ background-color:white;
 .nav-link {
   font-size: 1.2rem;
   font-family: "Montserrat-Light";
+  color: white;
 }
 
-/* Buttons */
-
-.download-button {
-  margin: 5% 3% 5% 0;
+.navbar-begin{
+ position: absolute;
+ top:0;
 }
-
-
-/* Title Section */
-
-/* #title {
-  background-color: rgb(117, 171, 189);
-  color: #fff;
-  text-align: left;
-} */
-
-/* #title .container-fluid {
-  padding: 3% 15% 7%;
-} */
-
-/* Title Image */
-
-/* .title-image {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-} */
-
-/* Features Section */
-
-/* #features {
-  position: relative;
-} */
-
-.feature-title {
-  font-size: 1.5rem;
-}
-
-.feature-box {
-  padding: 4.5%;
-  padding-bottom: 100px;
-}
-
-.icon {
-  color: #ef8172;
-  margin-bottom: 1rem;
-}
-
-.icon:hover {
-  color: #ff4c68;
-}
-
-
-/* Card */
 
 
 .card-image {
@@ -158,7 +140,7 @@ background-color:white;
 }
 
 
-
+/*
 .overlay {
   -webkit-transform: translate(0%, -100%);
   -ms-transform: translate(0%, -100%);
@@ -169,11 +151,11 @@ background-color:white;
   transition: .5s ease;
   background-color: #008CBA;
   border-radius: 5%;
-}
+} */
 
-.container:hover .overlay {
+/* .container:hover .overlay {
   opacity: 0.7;
-}
+} */
 
 .text {
   color: black;
@@ -189,18 +171,4 @@ background-color:white;
 
 .social-icon{
   margin: 20px 20px;
-}
-
-
-
-@media (max-width: 1028px) {
-
-  #title {
-    text-align: center;
-  }
-
-  .title-image {
-    position: static;
-    transform: rotate(0);
-  }
 }

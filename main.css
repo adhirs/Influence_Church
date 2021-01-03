@@ -16,23 +16,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-text{
   position: absolute; /* Position the background text */
-  bottom: 800px; /* At the bottom. Use top:0 to append it to the top */
+  bottom: 600px; /* At the bottom. Use top:0 to append it to the top */
   background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(30, 0, 0, 1); /* Black background with 0.5 opacity */
+  background: rgba(0, 0, 0, 0.6  ); /* Black background with 0.5 opacity */
   color: white; /* Grey text */
-  font-size: 22px;
+  font-size: 32px;
   font-weight: bolder;
 text-align: center;
 align-items: center;
+padding: 10%;
 }
 
-
-.card-information{
-  color: white;
-  opacity: 0.8;
-  top:100px;
-
-}
 
 
 .just-text{
@@ -42,7 +36,7 @@ align-items: center;
 }
 
 .pimg1{
-    background-image: url("images/hero.jpg");
+    background-image: url("images/Influence-Hero.png");
     min-height: 100%;
     position: relative;
     opacity: 0.6;
@@ -50,24 +44,21 @@ align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    z-index:-1;
+  z-index:1;
 }
 
 
 
 /* Containers */
 
+
+
 .container-fluid{
   padding: 7% 15%;
 
 }
 
-.logo{
-position: absolute;
-top: 0;
-width: 10%;
-background-blend-mode: lighten;
-}
+
 
 .church_img{
   opacity: 0.5;
@@ -110,12 +101,14 @@ background-color:white;
 
 .navbar {
   padding: 0 0 4.5rem;
+
 }
 
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
+
 }
 
 .nav-item {
@@ -128,10 +121,12 @@ background-color:white;
   color: white;
 }
 
-.navbar-begin{
- position: absolute;
+/* .navbar-begin{
+ position:absolute;
  top:0;
-}
+ right: 0px  ;
+} */
+
 
 
 .card-image {

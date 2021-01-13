@@ -161,6 +161,18 @@ font-weight: 400;
   z-index: 9999; */
 }
 
+.map-container{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.map-container a{
+
+text-decoration: none;
+
+}
+
 
 /* .profile-card-3 .card-content::before {
     content: '';

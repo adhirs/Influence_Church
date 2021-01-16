@@ -65,9 +65,14 @@ nav{
 
 }
 
+.anchor{
+  text-decoration: none;
+}
+
 #logo{
   padding: 0 1%;
 }
+
 
 
 
@@ -165,6 +170,7 @@ font-weight: 400;
   width: 100%;
   align-items: center;
   text-align: center;
+  padding-top: 20px;
 }
 
 .map-container a{
@@ -172,6 +178,41 @@ font-weight: 400;
 text-decoration: none;
 
 }
+
+.contact-us{
+  display: flex;
+/* align-items: center;
+justify-content: center; */
+  background:#efefef;
+}
+
+.church-times, .socials, .location{
+  flex:1;
+
+}
+
+.heading, .heading2, .heading3{
+text-align: center;
+}
+
+.info, .info2{
+
+  align-items: center;
+  justify-content: center;
+font-size: 18px;
+text-align: center;
+
+
+
+}
+
+
+
+
+
+
+
+
 
 
 /* .profile-card-3 .card-content::before {

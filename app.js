@@ -16,8 +16,8 @@
 // });
 
 
-const toggle = document.getElementByClassName("toggle-button")[0];
-const navbarLinks = document.getElementByClassName("nav-links")[0];
+const toggle = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("nav-links")[0];
 
 toggle.addEventListener("click",function(){
   navbarLinks.classList.toggle("active");

@@ -26,7 +26,7 @@ right: 50%;
 .landing{
   min-height: 100vh;
 
-  background: url("images/Influence-Hero.jpg");
+  background: url("images/influence-hero.jpg");
   /* opacity: 0.9; */
   background-attachment: fixed;
   background-size: cover;
@@ -101,7 +101,7 @@ nav{
 }
 
 .pimg1{
-    background-image: url("images/Influence-Hero.png");
+    background-image: url("images/influence-hero.png");
     min-height: 100%;
     /* opacity: 0.6; */
     background-position: center;

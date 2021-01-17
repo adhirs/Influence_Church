@@ -25,7 +25,10 @@ html {
   font-weight: 900;
 }
 
-
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+}
 /* .card{
   color:white;
   background: rgba(0, 0, 0, 0.6  );

@@ -33,7 +33,7 @@ h1,h2,h3,h4,h5,h6{
 .landing {
   height: 100vh;
 
-  background: url("images/influence-hero-min.jpg");
+  background: url("images/home-parallax.jpg");
   /* opacity: 0.9; */
   background-attachment: fixed;
   background-size: cover;

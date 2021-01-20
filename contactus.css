@@ -1,0 +1,78 @@
+body,html{
+  padding:0;
+  margin :0;
+box-sizing: border-box;
+background-color: #efefef;
+
+
+}
+
+.container-fluid{
+  padding: 2% 1%;
+}
+
+
+.img-container{
+
+width: 100%;
+height: 100%;
+align-items: center;
+text-align: center;
+position: relative;
+
+}
+
+
+
+.header-text{
+  position: absolute;
+  top:60%;
+  left: 50%;
+  transform: translate(-60%,-50%);
+  font-size: 52px;
+  border: 2px solid black;
+
+}
+
+.header-img{
+
+  width: 100%;
+  height: 60vh;
+opacity: 0.8;
+}
+
+.get-in-touch, .connect-us .text{
+  font-size: 30px;
+}
+
+.get-in-touch, .heading, .connect-us{
+  padding-top: 20px;
+  text-align: center;
+
+
+}
+
+.connect-us a{
+text-decoration: none;
+
+}
+
+
+.contact-container{
+  display: flex;
+
+}
+
+
+
+.location, .email, .phone{
+  flex:1;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.email{
+  border-left:  2px solid black;
+  border-right : 2px solid black;
+}

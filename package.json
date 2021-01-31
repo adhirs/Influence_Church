@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/adhirs/Influence_Church#readme",
   "dependencies": {
+    "emailjs-com": "^2.6.4",
     "http-server": "^0.12.3"
   }
 }

@@ -31,19 +31,20 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .landing {
-  height: 100vh;
 
-  background: url("images/home-parallax.jpg");
-  /* opacity: 0.9; */
-  background-attachment: fixed;
-  background-size: cover;
+  background-image: url("images/home-parallax-min.jpg");
+display: block;
+max-width: 100%;
+height: 100vh;
+background-attachment: fixed;
+background-size: cover;
 }
 
 .navbar{
   display:flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  /* background-color: #333; */
   color:white;
 }
 
@@ -74,8 +75,8 @@ nav {
 } */
 
 #logo{
-  width: 375px;
-  height: 150px;
+  width: 275px;
+  height: 100px;
 }
 
 
@@ -131,7 +132,7 @@ nav {
   top: .75rem;
   right: 1rem; */
   position: absolute;
-  top : 6rem;
+  top : 4rem;
   right: 1rem;
   flex-direction: column;
   justify-content: space-between;
@@ -147,15 +148,15 @@ nav {
   border-radius: 10px;
 }
 
-.pimg1 {
+/* .pimg1 {
   background-image: url("images/influence-hero-min.png");
   min-height: 100%;
-  /* opacity: 0.6; */
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+} */
 
 .text-center {
   text-align: center;
@@ -165,6 +166,7 @@ nav {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 
@@ -177,6 +179,7 @@ nav {
   height: 100%;
   border: none;
 }
+
 .profile-card-3 .background-block {
   float: left;
   width: 100%;
@@ -257,6 +260,185 @@ justify-content: center; */
   margin-top: 10px;
 }
 
+.img-container{
+/* width: 100%; */
+height: 100%;
+}
+
+.header-img{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+/*
+footer{
+	bottom: 0;
+  font-family: "Montserrat";
+}
+.footer-distributed{
+	background-color: #efefef;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+.footer-distributed h3{
+	color:  #black;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color: black;
+}
+
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  black;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: black;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center  span{
+	display:inline-block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color: black;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  black;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+
+}
+
+
+
+
 /*
 .heading{
   text-align: center;
@@ -303,7 +485,6 @@ justify-content: center; */
 
 
 
-
 @media (max-width: 1068px){
 .toggle-button{
   display: flex;
@@ -336,7 +517,39 @@ justify-content: center; */
 }
 
 #logo{
-  width: 250px;
-  height: 170px;
+  width: 150px;
+  height: 100px;
+}
+
+
+}
+/*
+@media (max-width:1000px){
+  .landing {
+
+    background-image: url("images/home-parallax-min-1000.jpg");
+    max-width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+
+@media (max-width:100px){
+  .landing {
+
+    background-image: url("images/home-parallax-min-1000.jpg");
+    max-width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+} */
+
+@media screen and (max-width: 540px) {
+.landing{
+  background-image: url("images/pastor.jpg");
+  width: auto;
 }
 }

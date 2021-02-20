@@ -10,28 +10,28 @@ toggle.addEventListener("click",function(){
 
 // INTERSECTION OBSERVER
 
-const header = document.querySelector(".navbar");
-const sectionOne = document.querySelector(".church-image");
-
-const sectionOneOptions = {
-  rootMargin: "-15% 0%"
-};
-
-const sectionOneObserver = new IntersectionObserver(function(
-  entries,
-  sectionOneObserver
-) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      header.classList.add("navbar-intersecting");
-    } else {
-      header.classList.remove("navbar-intersecting");
-    }
-  });
-},
-sectionOneOptions);
-
-sectionOneObserver.observe(sectionOne);
+// const header = document.querySelector(".navbar");
+// const sectionOne = document.querySelector(".church-image");
+//
+// const sectionOneOptions = {
+//   rootMargin: "-15% 0%"
+// };
+//
+// const sectionOneObserver = new IntersectionObserver(function(
+//   entries,
+//   sectionOneObserver
+// ) {
+//   entries.forEach(entry => {
+//     if (!entry.isIntersecting) {
+//       header.classList.add("navbar-intersecting");
+//     } else {
+//       header.classList.remove("navbar-intersecting");
+//     }
+//   });
+// },
+// sectionOneOptions);
+//
+// sectionOneObserver.observe(sectionOne);
 
 // EMAILJS FORM
 
@@ -91,19 +91,19 @@ message:document.getElementById("msg").value
 
 }
 
-const button = document.querySelector(".bttn");
-const modalBg = document.querySelector(".modal-bg");
-const modalClose = document.querySelector(".modal-close");
-
-button.addEventListener("click",function(){
-  modalBg.classList.add("bg-active");
-  disableScroll();
-});
-
-modalClose.addEventListener("click",function(){
-  modalBg.classList.remove("bg-active");
-  enableScroll();
-});
+// const button = document.querySelector(".bttn");
+// const modalBg = document.querySelector(".modal-bg");
+// const modalClose = document.querySelector(".modal-close");
+//
+// button.addEventListener("click",function(){
+//   modalBg.classList.add("bg-active");
+//   disableScroll();
+// });
+//
+// modalClose.addEventListener("click",function(){
+//   modalBg.classList.remove("bg-active");
+//   enableScroll();
+// });
 
 function disableScroll() {
     // Get the current page scroll position
@@ -119,3 +119,50 @@ function disableScroll() {
 function enableScroll() {
     window.onscroll = function() {};
 }
+
+// let slidePosition = 0;
+// const slides = document.getElementsByClassName("carousel__item");
+// const totalSlides = slides.length;
+//
+//
+// document.getElementById("carousel__button--next").addEventListener("click",function(){
+// moveToNextSlide();
+// });
+//
+// document.getElementById("carousel__button--prev").addEventListener("click",function(){
+// moveToPrevSlide();
+// });
+//
+// function updateSlidePosition(){
+//   for (let slide of slides){
+//     slide.classList.remove("carousel__item--visible");
+//     slide.classList.add("carousel__item--hidden");
+//   }
+//   slides[slidePosition].classList.add("carousel__item--visible");
+//
+// }
+//
+//
+//
+//
+//
+// function moveToNextSlide(){
+//   if (slidePosition === totalSlides -1){
+//     slidePosition =0;
+//   }
+//   else{
+//     slidePosition++;
+//   }
+//   updateSlidePosition();
+// }
+//
+// function moveToPrevSlide(){
+// if(slidePosition === 0){
+//   slidePosition = totalSlides -1;
+//   console.log("WE are moving");
+// }
+// else{
+//   slidePosition--;
+// }
+// updateSlidePosition();
+// }

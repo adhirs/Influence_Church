@@ -1,0 +1,6 @@
+# headers for sitemaps
+/sitemap.xml
+ content-type: application/xml
+/sitemap.xml.gz
+ content-type: application/xml
+ accept-encoding: gzip

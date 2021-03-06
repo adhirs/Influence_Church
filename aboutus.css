@@ -248,8 +248,8 @@ footer .footer-left-icons a {
 }
 
 .pastor-image {
-  height: 350px;
-  height: 350px;
+  height: 325px;
+  height: 325px;
 }
 
 @media screen and (max-width: 800px) {
@@ -280,6 +280,9 @@ footer .footer-left-icons a {
     border-radius: 10px;
   }
 
+  .card-container{
+    margin-right: 16px;
+  }
   .toggle-button {
     display: flex;
   }
@@ -318,13 +321,13 @@ footer .footer-left-icons a {
 
 @media (max-width: 350px) {
   .header-text {
-    transform: translate(20%, 35%);
+    transform: translate(20%, 110%);
   }
 }
 
 @media (max-width: 320px) {
   .pastor-image {
-    height: 280px;
+    width: 275px;
     height: 280px;
   }
 }

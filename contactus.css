@@ -7,72 +7,69 @@ html {
   background-color: #efefef;
 }
 
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Montserrat', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", serif;
   font-weight: 700;
 }
 
-
-.navbar{
-  display:flex;
+.navbar {
+  display: flex;
   position: fixed;
-  left: 0;      /* ADDED */
-  top: 0;       /* ADDED */
-  width: 100%;  /* ADDED */
+  left: 0; /* ADDED */
+  top: 0; /* ADDED */
+  width: 100%; /* ADDED */
   justify-content: space-between;
   align-items: center;
   background-color: #333;
-  color:white;
+  color: white;
   z-index: 100;
   transition: 0.5s;
 }
 
-.navbar-intersecting{
+.navbar-intersecting {
   background-color: #333;
   transition: 0.5s;
 }
 
-.brand-title{
+.brand-title {
   font-size: 1.5rem;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
-
-
-#logo{
+#logo {
   width: 135px;
   height: 50px;
 }
 
-
 .nav-links ul {
   margin: 0;
-  padding:0;
+  padding: 0;
   display: flex;
-
 }
 
-.nav-links li{
+.nav-links li {
   list-style: none;
-
 }
 
 .nav-links li a {
   text-decoration: none;
   color: white;
-  padding : 1rem;
+  padding: 1rem;
   display: block;
 }
 
-.nav-links li:hover{
+.nav-links li:hover {
   background-color: #555;
-
 }
-
 
 .toggle-button {
   position: absolute;
-  top : 2rem;
+  top: 2rem;
   right: 1rem;
   flex-direction: column;
   justify-content: space-between;
@@ -87,7 +84,6 @@ h1,h2,h3,h4,h5,h6{
   background-color: white;
   border-radius: 10px;
 }
-
 
 .container-fluid {
   padding: 2% 1%;
@@ -111,10 +107,9 @@ h1,h2,h3,h4,h5,h6{
   padding: 0px 10px;
   border-radius: 10px;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.2);
-  box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.2);  
-
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 .header-img {
@@ -126,21 +121,19 @@ h1,h2,h3,h4,h5,h6{
   opacity: 0.8;
 }
 
-
-
-.form a{
-text-align: center;
+.form a {
+  text-align: center;
 }
 
-.form-input{
+.form-input {
   margin-bottom: 30px;
   background-color: #efefef;
-  border: 0px ;
-border-bottom: 2px solid  #719ECE;
-width: 100%;
+  border: 0px;
+  border-bottom: 2px solid #719ece;
+  width: 100%;
 }
 
-  /* .navbar{
+/* .navbar{
     display:flex;
     position: fixed;
     left: 0;
@@ -155,25 +148,25 @@ width: 100%;
 
   } */
 
-
-
-
-.form-header{
-  border-bottom: 2px solid #719ECE;
+.form-header {
+  border-bottom: 2px solid #719ece;
   width: 100%;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 45px;
 }
 
-
-.get-in-touch, .connect-us .text, .map {
+.get-in-touch,
+.connect-us .text,
+.map {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 30px;
 }
 
-.get-in-touch, .heading, .connect-us{
+.get-in-touch,
+.heading,
+.connect-us {
   padding-top: 20px;
   text-align: center;
 }
@@ -191,14 +184,16 @@ width: 100%;
   margin-top: 100px;
   text-align: left;
   font-weight: bold;
-padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .text {
   padding-bottom: 40px;
 }
 
-.location, .email, .phone {
+.location,
+.email,
+.phone {
   flex: 1;
   text-align: center;
   padding-top: 20px;
@@ -213,134 +208,115 @@ padding-bottom: 20px;
 footer {
   display: flex;
   flex-direction: column;
-  height:100%;
+  height: 100%;
   width: 100%;
-overflow:hidden;
-
-
+  overflow: hidden;
 }
 
-
-
- .footer-socials {
+.footer-socials {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.footer-socials, .footer-left-header,.footer-contact {
+.footer-socials,
+.footer-left-header,
+.footer-contact {
   justify-content: center;
   text-align: center;
   align-items: center;
-height: 100%;
-
+  height: 100%;
 }
 
-.footer-left-header{
+.footer-left-header {
   padding-bottom: 20px;
 }
 
-.footer-contact{
-display: flex;
-flex-direction: row;
+.footer-contact {
+  display: flex;
+  flex-direction: row;
 
-align-content: center;
-padding-top: 40px;
-
+  align-content: center;
+  padding-top: 40px;
 }
 
-
-
-.icons{
+.icons {
   margin-bottom: 30px;
   display: flex;
-flex-direction: column;
-align-items:center;
-justify-content: center;
-height: 100%;
-padding: 0 30px;
-
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 30px;
 }
 
-.icon-footer{
-padding-right: 20px;
+.icon-footer {
+  padding-right: 20px;
 }
 
-footer .footer-left-icons a{
+footer .footer-left-icons a {
   display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
 
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
 
-	margin-right: 3px;
+  margin-right: 3px;
 
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
-
-
 
 @media (max-width: 350px) {
-
   .header-text {
- 
     transform: translate(20%, 35%);
-    
   }
-
 }
 
-@media screen and (max-width:800px) {
-  .footer-contact{
+@media screen and (max-width: 800px) {
+  .footer-contact {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1068px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: none;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links ul {
+    width: 100%;
     flex-direction: column;
   }
 
+  .nav-links li {
+    text-align: center;
+  }
 
-}
+  .nav-links li a {
+    padding: 0.5rem 1rem;
+  }
 
+  .nav-links.active {
+    display: flex;
+  }
 
-
-@media (max-width: 1068px){
-.toggle-button{
-  display: flex;
-}
-
-.nav-links {
-  width: 100%;
-  display: none;
-}
-.navbar{
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.nav-links ul{
-  width: 100%;
-  flex-direction: column;
-}
-
-.nav-links li{
-  text-align: center;
-}
-
-.nav-links li a{
-  padding: .5rem 1rem;
-}
-
-.nav-links.active{
-  display: flex;
-}
-
-#logo{
-  width: 100px;
-  height: 50px;
-}
-
-
+  #logo {
+    width: 100px;
+    height: 50px;
+  }
 }

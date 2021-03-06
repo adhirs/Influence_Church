@@ -415,11 +415,20 @@ footer .footer-left-icons a{
 }
 }
 
+@media screen and (min-width:1800px) {
+
+
+  .youtube-iframe {
+    width:940px;
+  
+  }
+}
+
 @media screen and (min-width:1500px) {
 
 
 .youtube-iframe {
-  width:940px;
+  width:800px;
 
 }
 

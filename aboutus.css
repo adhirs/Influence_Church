@@ -1,3 +1,111 @@
+body,
+html {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-weight-thin{
+  font-weight: 100;
+}
+.font-weight-light{
+  font-weight: 300;
+}
+.font-weight-regular{
+  font-weight: 400;
+}
+.font-weight-medium{
+  font-weight: 500;
+}
+.font-weight-bold{
+  font-weight: 700;
+}
+.font-weight-black{
+  font-weight: 900;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+}
+
+.navbar{
+  display:flex;
+  position: fixed;
+  left: 0;      /* ADDED */
+  top: 0;       /* ADDED */
+  width: 100%;  /* ADDED */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color:white;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+.navbar-intersecting{
+  background-color: #333;
+  transition: 0.5s;
+}
+
+.brand-title{
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+
+
+#logo{
+  width: 135px;
+  height: 50px;
+}
+
+
+.nav-links ul {
+  margin: 0;
+  padding:0;
+  display: flex;
+
+}
+
+.nav-links li{
+  list-style: none;
+
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding : 1rem;
+  display: block;
+}
+
+.nav-links li:hover{
+  background-color: #555;
+
+}
+
+
+.toggle-button {
+  position: absolute;
+  top : 2rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  display: none;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
 .card-text {
   position: absolute; /* Position the background text */
   bottom: 600px; /* At the bottom. Use top:0 to append it to the top */
@@ -17,7 +125,9 @@
   align-items: center;
   text-align: center;
   position: relative;
+  top: 82px;
 }
+
 
 .header-text {
   color: red;
@@ -30,6 +140,50 @@
   border: 2px solid red;
 
 }
+
+.pastor-text{
+  margin-top:100px;
+}
+
+
+
+.members{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+/* overflow-x: auto; */
+
+}
+
+.members::-webkit-scrollbar{
+  width: 0px;
+}
+
+/* .row1,.row2,.row3{
+  display: flex;
+  flex-direction: row;
+} */
+
+.card-container {
+	background-color: #efefef;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #000;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.card-container .round {
+	border: 1px solid #03BFCB;
+	border-radius: 50%;
+	padding: 7px;
+  width: 200px;
+  height:200px;
+}
+
 
 
 .header-img {
@@ -133,34 +287,45 @@ footer{
 }
 
 
-/* .footer-links,.footer-socials,.footer-contact{
+}
+
+
+
+@media (max-width: 1068px){
+.toggle-button{
+  display: flex;
+}
+
+.nav-links {
+  width: 100%;
+  display: none;
+}
+.navbar{
   flex-direction: column;
-} */
+  align-items: flex-start;
+}
 
-/* .icons, .footer-contact,.icon-footer{
-  justify-content: flex-start;
+.nav-links ul{
+  width: 100%;
+  flex-direction: column;
+}
 
-} */
+.nav-links li{
+  text-align: center;
+}
 
-  /* .contact-container, footer {
-    flex-direction: column;
+.nav-links li a{
+  padding: .5rem 1rem;
+}
 
-  }
+.nav-links.active{
+  display: flex;
+}
 
-  .footer-contact, .icons{
-    align-items:center;
-justify-content: center;
-  }
-
-  .footer-contact, .icons {
-    justify-content: flex-start;
-
-  }
-
-
-  .header-text {
-    font-size: 32px;
-  } */
+#logo{
+  width: 100px;
+  height: 50px;
+}
 
 
 }

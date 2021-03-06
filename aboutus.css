@@ -30,6 +30,7 @@ h1,h2,h3,h4,h5,h6{
   font-weight: 700;
 }
 
+
 .navbar{
   display:flex;
   position: fixed;
@@ -153,14 +154,13 @@ h1,h2,h3,h4,h5,h6{
 .members{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-/* overflow-x: auto; */
+
 
 }
 
-.members::-webkit-scrollbar{
-  width: 0px;
-}
+
 
 /* .row1,.row2,.row3{
   display: flex;
@@ -168,19 +168,20 @@ h1,h2,h3,h4,h5,h6{
 } */
 
 .card-container {
-	background-color: #efefef;
+	background-color: whitesmoke;
 	border-radius: 5px;
-	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.2);
 	color: #000;
 	padding-top: 30px;
 	position: relative;
 	width: 350px;
 	max-width: 100%;
 	text-align: center;
+  margin-bottom: 30px;
 }
 
 .card-container .round {
-	border: 1px solid #03BFCB;
+	border: 1px solid #333;
 	border-radius: 50%;
 	padding: 7px;
   width: 200px;
@@ -271,6 +272,13 @@ footer .footer-left-icons a{
 }
 
 
+.pastor-image{
+ 
+  height: 350px;
+  height: 350px;
+  
+}
+
 @media screen and (max-width:800px) {
   .footer-contact{
     flex-direction: column;
@@ -291,6 +299,22 @@ footer{
 
 
 @media (max-width: 1068px){
+.members{
+  flex-wrap: nowrap;
+  overflow-x: scroll; 
+  
+}
+
+.members::-webkit-scrollbar{
+  height: 4px;
+  width: 4px;
+  background: gray;
+}
+.members::-webkit-scrollbar-thumb:horizontal{
+  background: #000;
+  border-radius: 10px;
+}
+
 .toggle-button{
   display: flex;
 }
@@ -336,6 +360,17 @@ footer{
   .header-text {
  
     transform: translate(20%, 35%);
+    
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .pastor-image{
+ 
+    height: 280px;
+    height: 280px;
     
   }
 

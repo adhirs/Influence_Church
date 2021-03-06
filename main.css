@@ -6,27 +6,8 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
-.font-weight-thin{
-  font-weight: 100;
-}
-.font-weight-light{
-  font-weight: 300;
-}
-.font-weight-regular{
-  font-weight: 400;
-}
-.font-weight-medium{
-  font-weight: 500;
-}
-.font-weight-bold{
-  font-weight: 700;
-}
-.font-weight-black{
-  font-weight: 900;
-}
-
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Montserrat', serif;
   font-weight: 700;
 }
 
@@ -160,8 +141,9 @@ background-size: cover;
   overflow: hidden;
   width: 100%;
   text-align: center;
-  height: 100%;
+  height: 700px;
   border: none;
+  padding: 20px 0px;
 }
 
 .profile-card-3 .background-block {
@@ -183,8 +165,13 @@ background-size: cover;
   color: #232323;
   float: left;
   background: #efefef;
-  height: 50%;
+height: 50%;
   border-radius: 0 0 5px 5px;
+
+}
+
+.profile-card-3 .card-content ul{
+
 
 }
 
@@ -259,6 +246,34 @@ height: 100%;
 
 }
 
+.youtube{
+align-items: center;
+width: 90%;
+padding: 25px;
+}
+
+
+.youtube-row1{
+  text-align: center;
+}
+.youtube-row2{
+  display:flex;
+/* align-items: center; */
+/* justify-content: center; */
+justify-content: space-evenly;
+flex-direction: row;
+align-items: center;
+
+}
+.youtube-iframe {
+  width:700px;
+
+}
+
+.facebook-iframe {
+  width:500px;
+
+}
 
 footer {
   display: flex;
@@ -267,7 +282,6 @@ footer {
   width: 100%;
 overflow:hidden;
 }
-
 
 
  .footer-socials {
@@ -405,10 +419,87 @@ footer .footer-left-icons a{
 }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (min-width:1500px) {
+
+
+.youtube-iframe {
+  width:940px;
+
+}
+
+.facebook-iframe {
+  width:500px;
+
+}
+}
+
+
+@media screen and (max-width:1200px) {
+  .profile-card-3 {
+
+    height: 800px;
+
+  }
   .footer-contact{
     flex-direction: column;
   }
 
+.youtube-row2{flex-direction: column;}
 
+.youtube-iframe {
+  width:700px;
+
+}
+}
+
+@media screen and (max-width:768px) {
+
+  .profile-card-3 {
+
+    height: 600px;
+
+  }
+  
+.youtube-iframe {
+  width:600px;
+
+}
+
+.facebook-iframe {
+  width:600px;
+
+}
+}
+
+@media screen and (max-width:520px) {
+  .profile-card-3 {
+
+    height: 600px;
+
+  }
+
+.youtube-iframe {
+  width:280px;
+  height: 320px;
+}
+
+.facebook-iframe {
+  width:280px;
+  height: 480px;
+}
+}
+
+
+@media screen and (max-width:320px) {
+
+
+.youtube-iframe {
+  width:280px;
+  height: 320px;
+}
+
+.facebook-iframe {
+  width:280px;
+  height: 480px;
+}
 }

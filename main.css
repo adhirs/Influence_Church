@@ -489,6 +489,12 @@ footer .footer-left-icons a{
 @media screen and (max-width:320px) {
 
 
+.header-text {
+  
+  transform: translate(20%, 35%);
+  
+}
+
 .youtube-iframe {
   width:280px;
   height: 320px;

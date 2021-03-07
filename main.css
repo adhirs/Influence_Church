@@ -315,7 +315,7 @@ footer .footer-left-icons a {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color: #33383b;
+  background-color: #333;
   border-radius: 2px;
 
   font-size: 20px;
@@ -325,7 +325,16 @@ footer .footer-left-icons a {
 
   margin-right: 3px;
 
-  margin-bottom: 5px;
+  margin-bottom: 24px;
+
+}
+footer .footer-left-icons a:hover {
+
+  background-color: white;
+  color: black;
+  border-radius: 35px;
+  transition: all 1s;
+
 }
 
 @media (max-width: 880px) {

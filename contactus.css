@@ -4,6 +4,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+
 }
 
 h1,
@@ -13,15 +14,15 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", serif;
-  font-weight: 700;
+ 
 }
 
 .navbar {
   display: flex;
   position: fixed;
-  left: 0; /* ADDED */
-  top: 0; /* ADDED */
-  width: 100%; /* ADDED */
+  left: 0; 
+  top: 0;
+  width: 100%; 
   justify-content: space-between;
   align-items: center;
   background-color: #333;
@@ -131,21 +132,6 @@ h6 {
   border-bottom: 2px solid #719ece;
   width: 100%;
 }
-
-/* .navbar{
-    display:flex;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color:white;
-    z-index: 100;
-    transition: 0.5s;
-
-  } */
 
 .form-header {
   border-bottom: 2px solid #719ece;

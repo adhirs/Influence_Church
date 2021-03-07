@@ -28,12 +28,11 @@ h6 {
 .navbar {
   display: flex;
   position: fixed;
-  left: 0; /* ADDED */
-  top: 0; /* ADDED */
-  width: 100%; /* ADDED */
+  left: 0; 
+  top: 0; 
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #333; */
   color: white;
   z-index: 100;
   transition: 0.5s;
@@ -242,8 +241,6 @@ h6 {
 }
 .youtube-row2 {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: center; */
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;

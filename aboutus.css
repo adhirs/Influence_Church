@@ -38,9 +38,9 @@ h6 {
 .navbar {
   display: flex;
   position: fixed;
-  left: 0; /* ADDED */
-  top: 0; /* ADDED */
-  width: 100%; /* ADDED */
+  left: 0; 
+  top: 0; 
+  width: 100%; 
   justify-content: space-between;
   align-items: center;
   background-color: #333;
@@ -150,10 +150,6 @@ h6 {
   justify-content: space-between;
 }
 
-/* .row1,.row2,.row3{
-  display: flex;
-  flex-direction: row;
-} */
 
 .card-container {
   background-color: whitesmoke;

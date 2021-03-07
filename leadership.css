@@ -278,6 +278,7 @@ footer .footer-left-icons a {
 
   .card-container{
     margin-right: 16px;
+    padding: 12px 12px;
   }
   .toggle-button {
     display: flex;

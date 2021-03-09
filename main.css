@@ -326,6 +326,7 @@ footer .footer-left-icons a {
   margin-right: 3px;
 
   margin-bottom: 24px;
+  transition: all 1s;
 
 }
 footer .footer-left-icons a:hover {

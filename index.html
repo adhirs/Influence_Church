@@ -107,11 +107,14 @@
                 images/dark-logo-for-pc.jpg 2048w"> -->
 
     <picture class= "church-image" >
+      <source  srcset="images/dark-logo-for-pc.webp" media="(min-width: 1250px)" />
       <source  srcset="images/dark-logo-for-pc.jpg" media="(min-width: 1250px)" />
+      <source  srcset="images/dark-logo-iphone.webp" media="(min-width: 750px)" />
       <source  srcset="images/dark-logo-iphone.jpg" media="(min-width: 750px)" />
+      <source  srcset="images/dark-logo-small.webp" media="(min-width: 250px)" />
       <source  srcset="images/dark-logo-small.png" media="(min-width: 250px)" />
 
-      <img class= "church-image" src="images/dark-logo-uncompressed.jpg" />
+      <img class= "church-image" src="images/dark-logo-uncompressed.webp" onerror="this.onerror=null; this.src='images/dark-logo-uncompressed.jpg'" alt="image of church stage" />
   </picture>
 
 

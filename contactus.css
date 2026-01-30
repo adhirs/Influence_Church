@@ -1,10 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 html {
   padding: 0;
   box-sizing: border-box;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: rgba(51, 51, 51, 0.85);
+  color: #fff;
 }
 
 h1,
@@ -14,26 +29,34 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", serif;
- 
+  letter-spacing: -0.02em;
 }
+
+/* ===== NAVBAR ===== */
 
 .navbar {
   display: flex;
   position: fixed;
-  left: 0; 
+  left: 0;
   top: 0;
-  width: 100%; 
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: rgba(33, 33, 33, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   color: white;
   z-index: 100;
-  transition: 0.5s;
+  transition: background-color 0.4s, box-shadow 0.4s;
 }
 
 .navbar-intersecting {
-  background-color: #333;
-  transition: 0.5s;
+  background-color: rgba(33, 33, 33, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.4s, box-shadow 0.4s;
 }
 
 .brand-title {
@@ -61,10 +84,30 @@ h6 {
   color: white;
   padding: 1rem;
   display: block;
+  position: relative;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 60%;
+  height: 2px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 .nav-links li:hover {
-  background-color: #555;
+  background-color: transparent;
 }
 
 .toggle-button {
@@ -85,9 +128,7 @@ h6 {
   border-radius: 10px;
 }
 
-.container-fluid {
-  padding: 2% 1%;
-}
+/* ===== HERO / HEADER ===== */
 
 .img-container {
   width: 100%;
@@ -95,31 +136,175 @@ h6 {
   align-items: center;
   text-align: center;
   position: relative;
-  top: 82px;
+  top: 0;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.5) 80%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
 }
 
 .header-text {
-  width: 70%;
-  transform: translate(20%, 120%);
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
+  color: white;
+  z-index: 2;
+  width: 90%;
+  max-width: 600px;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
 
-  font-size: 2rem;
-  padding: 0px 10px;
-  border-radius: 10px;
-  background-color: white;
-  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+.header-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.header-text p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.7;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
 }
 
 .header-img {
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   object-fit: cover;
   object-position: center;
-
-  opacity: 0.8;
+  opacity: 1;
 }
+
+/* ===== SECTION HEADING ===== */
+
+.section-heading {
+  text-align: center;
+  padding: 20px 20px 16px;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.section-heading h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.heading-underline {
+  width: 60px;
+  height: 3px;
+  background-color: #333;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+}
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 24px 24px 0;
+}
+
+/* ===== SERVICE TIMES ===== */
+
+.service-times-section {
+  margin-top: 60px;
+}
+
+.service-time-detail {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+/* ===== MAP ===== */
+
+.container-fluid {
+  padding: 2% 1%;
+}
+
+.map {
+  margin-top: 50px;
+  text-align: left;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.map-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.map-frame-wrapper {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-frame-wrapper iframe {
+  display: block;
+}
+
+/* ===== MESSAGING ===== */
+
+.messaging-section {
+  padding-bottom: 20px;
+}
+
+.messaging-icons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 10px 0 20px;
+}
+
+.msg-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.msg-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  background-color: #eee;
+}
+
+/* ===== FORM (existing) ===== */
 
 .form a {
   text-align: center;
@@ -165,13 +350,6 @@ h6 {
   flex-direction: row;
 }
 
-.map {
-  margin-top: 100px;
-  text-align: left;
-  font-weight: bold;
-  padding-bottom: 20px;
-}
-
 .text {
   padding-bottom: 40px;
 }
@@ -188,6 +366,23 @@ h6 {
 .email {
   border-left: 2px solid black;
   border-right: 2px solid black;
+}
+
+/* ===== FOOTER ===== */
+
+.site-footer {
+  background-color: #222;
+  color: white;
+  margin-top: 60px;
+  padding-top: 10px;
+}
+
+.footer-tagline {
+  margin: 20px 0;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  opacity: 0.9;
 }
 
 footer {
@@ -220,7 +415,6 @@ footer {
 .footer-contact {
   display: flex;
   flex-direction: row;
-
   align-content: center;
   padding-top: 40px;
 }
@@ -240,28 +434,81 @@ footer {
 }
 
 footer .footer-left-icons a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
   cursor: pointer;
-  background-color: #33383b;
-  border-radius: 2px;
-
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
   font-size: 20px;
   color: #ffffff;
   text-align: center;
-  line-height: 35px;
-
-  margin-right: 3px;
-
-  margin-bottom: 5px;
+  line-height: 42px;
+  margin: 0 8px 24px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-@media (max-width: 350px) {
-  .header-text {
-    transform: translate(20%, 35%);
-  }
+footer .footer-left-icons a.social-fb:hover {
+  background-color: #1877f2;
+  transform: translateY(-3px);
 }
+
+footer .footer-left-icons a.social-ig:hover {
+  background-color: #e4405f;
+  transform: translateY(-3px);
+}
+
+footer .footer-left-icons a.social-yt:hover {
+  background-color: #ff0000;
+  transform: translateY(-3px);
+}
+
+footer .footer-left-icons a:hover {
+  transform: translateY(-3px);
+}
+
+.footer-divider {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 35% 30px;
+  border: none;
+  height: 1px;
+}
+
+.footer-contact-row {
+  padding-bottom: 10px;
+}
+
+.footer-contact-row i {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+.footer-contact-row .just-data {
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.footer-contact-row a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-contact-row a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 6px;
+}
+
+/* ===== RESPONSIVE ===== */
 
 @media screen and (max-width: 800px) {
   .footer-contact {
@@ -303,5 +550,45 @@ footer .footer-left-icons a {
   #logo {
     width: 100px;
     height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .map-grid {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .header-text p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .header-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-text p {
+    font-size: 0.85rem;
+  }
+
+  .section-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-time-detail {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .header-text h1 {
+    font-size: 1.3rem;
   }
 }

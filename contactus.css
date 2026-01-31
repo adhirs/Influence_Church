@@ -9,6 +9,7 @@ html {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 *,
@@ -587,5 +588,12 @@ footer .footer-left-icons a:hover {
 @media (max-width: 350px) {
   .header-text h1 {
     font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-text {
+    transform: none;
+    text-align: center;
   }
 }

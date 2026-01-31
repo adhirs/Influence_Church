@@ -134,15 +134,27 @@
     </nav>
 
     <div class="img-container">
-      <img
-        src="images/contact-header-edit.jpeg"
-        alt="Contact Us Header Image"
-        class="header-img"
-        onerror="
-          this.onerror = null;
-          this.src = 'images/contact-header-28.jpg';
-        "
-      />
+              <picture class="church-image">
+          <source
+            srcset="images/contact-header-edit.jpeg"
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="images/contact-header-edit-mobile.jpg"
+            media="(min-width: 250px)"
+          />
+
+          <img
+            class="header-img"
+            src="images/contact-header-edit.jpeg"
+            onerror="
+              this.onerror = null;
+              this.src = 'images/contact-header-edit.jpeg'
+            "
+            alt="image of church stage"
+          />
+        </picture>
+
       <div class="hero-overlay"></div>
     </div>
 

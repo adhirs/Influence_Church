@@ -55,7 +55,8 @@ h6 {
   transition: background-color 0.4s, box-shadow 0.4s, backdrop-filter 0.4s;
 }
 
-.navbar-intersecting {
+.navbar-intersecting,
+.navbar.nav-open {
   background-color: rgba(33, 33, 33, 0.92);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);

@@ -4,6 +4,7 @@ const navbarLinks = document.getElementsByClassName("nav-links")[0];
 
 toggle.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
+  document.querySelector(".navbar").classList.toggle("nav-open");
   return false;
 });
 

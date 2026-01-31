@@ -26,7 +26,7 @@ function loadPlugins() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             if(!ytIframe.src) ytIframe.src = "https://www.youtube.com/embed/videoseries?list=UUBZKuZV7UrYa2NOlRxP5MEg&origin=https://influencechurchtt.org"
-            if(!fbIframe.src) fbIframe.src = "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Finfluencechurch.tt&tabs=timeline%2Cevents&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            if(!fbIframe.src) fbIframe.src = "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Finfluencechurch.tt%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
           }
         });
       },
